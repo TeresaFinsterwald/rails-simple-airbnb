@@ -1,3 +1,66 @@
 // Place all the styles related to the flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+background-color: hsl(0, 18%, 97%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.flat-card {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 250px;
+  margin: 20px 20px 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  align-items: space-between;
+  margin: 20px 20px;
+}
+
+.description {
+  background-color: #eeeaea;
+  padding: 10px 15px;
+}
+
+.links {
+  padding: 20px 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.banner {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.maininfo {
+  display: block;
+  margin: 20px 20px;
+  width: 600px;
+}
+
+.header {
+  background-color: lightgray
+}
+
+.explanation {
+  background-color: lightgray
+}
+
+.details {
+  background-color: lightgray
+}

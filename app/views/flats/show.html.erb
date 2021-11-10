@@ -1,0 +1,24 @@
+<div class="banner">
+  <h2>Simple Airbnb</h2>
+  <li><%= link_to "Add new", new_flat_path %></li>
+</div>
+
+<div class="maininfo">
+  <div class="header">
+    <h2><%= @flat.name %></h2>
+    <p><%= @flat.address %></p>
+  </div>
+
+  <div class="explanation">
+    <h3>A bit more about this flat</h3>
+    <p><%= @flat.description %></p>
+  </div>
+
+  <div class="details">
+    <h3>Details</h2>
+    <p><li><i class="fas fa-users"></i><%=@flat.number_of_guests%></li></p>
+    <p><li><i class="fas fa-euro-sign"></i><%= @flat.price_per_night%></li></p>
+  </div>
+</div>
+
+<%= link_to 'Back', flats_path %>

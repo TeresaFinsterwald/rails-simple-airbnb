@@ -1,0 +1,25 @@
+<div class="banner">
+  <h2>Simple Airbnb</h2>
+  <li><%= link_to "Add new", new_flat_path %></li>
+</div>
+
+<h1>All our Flats (<%=Flat.count %>)</h1>
+<div class="container">
+  <ul>
+    <% @flats.each do |flat| %>
+      <div class="flat-card">
+        <div class="description">
+          <h2><li><%= flat.name%></li></h2>
+          <p><li><%= flat.address%></li></p>
+          <div class="icons">
+            <p><li><i class="fas fa-users"></i><%=flat.number_of_guests%></li></p>
+            <p><li><i class="fas fa-euro-sign"></i><%= flat.price_per_night%></li></p>
+          </div>
+         </div>
+         <div class="links">
+          <li><%= link_to "More info", flat_path(flat) %></li>
+         </div>
+      </div>
+    <% end %>
+  </ul>
+</div>
